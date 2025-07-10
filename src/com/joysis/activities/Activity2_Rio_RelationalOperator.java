@@ -17,7 +17,7 @@ public class Activity2_Rio_RelationalOperator {
         System.out.println("Relational Operator <,>, <=, >=, == ,!=\n");
         
         Scanner input = new Scanner(System.in);
-                
+        
         System.out.println("Enter the first number: ");
         int a = input.nextInt();
         
