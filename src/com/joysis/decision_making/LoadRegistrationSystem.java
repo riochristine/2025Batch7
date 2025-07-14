@@ -1,0 +1,133 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.joysis.decision_making;
+
+import java.util.Scanner;
+
+/*
+            Load Registration
+            
+            1. Text Only
+            2. Call Only
+            3. Call N Text
+            4. Data Only 
+        */
+public class LoadRegistrationSystem {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("============================");
+        System.out.println("  Load Registration System  ");
+        System.out.println("============================");
+        
+        System.out.println("  [1] Text Only");
+        System.out.println("  [2] Call Only");
+        System.out.println("  [3] Call N Text");
+        System.out.println("  [4] Data Only");
+        System.out.println("  [5] Exit");
+        System.out.print/*ln*/("Select your choice: "); // remove ln if ayaw sa new line yung input
+        int choice = input.nextInt();
+        
+        // nested if statement
+        if (choice == 1) { // [1] Text Only
+            System.out.println("\nText Only Promos");
+            
+            System.out.println("  [1] 1 Day, P10 ");
+            System.out.println("  [2] 2 Days, P20 ");
+            System.out.println("  [3] 5 Days, P50 ");
+            System.out.print("Enter your choice: ");
+            
+            choice = input.nextInt();
+            
+            if (choice == 1) { // [1] 1 Day, P10
+                System.out.println("  [1] Subscribe");
+                System.out.println("  [2] Exit");
+                System.out.print("Enter your choice: ");
+                choice = input.nextInt();
+                
+                if (choice == 1) {
+                    System.out.println("Congratulations! You have successfully"
+                            + " subscribed to unli text for P10 valid for 1 day.");
+                } else {
+                    System.out.println("Thank you!");
+                }
+            } else if (choice == 2) { // [2] 2 Days, P20
+                System.out.println("  [1] Subscribe");
+                System.out.println("  [2] Exit");
+                System.out.print("Enter your choice: ");
+                choice = input.nextInt();
+                
+                if (choice == 1) {
+                    System.out.println("Congratulations! You have successfully"
+                            + " subscribed to unli text for P20 valid for 2 days.");
+                } else {
+                    System.out.println("Thank you!");
+                }
+            } else if (choice == 3) { // [3] 5 Days, P50 
+                System.out.println("  [1] Subscribe");
+                System.out.println("  [2] Exit");
+                System.out.print("Enter your choice: ");
+                choice = input.nextInt();
+                
+                if (choice == 1) {
+                    System.out.println("Congratulations! You have successfully"
+                            + " subscribed to unli text for P50 valid for 5 days.");
+                } else {
+                    System.out.println("Thank you!");
+                }
+            }
+        } else if (choice == 2) { // [2] Call Only
+            System.out.println("\nCall Only");
+            
+            System.out.println("  [1] 30 mins, P10");
+            System.out.println("  [2] 1 Hr 30 mins., P30");
+            System.out.println("  [3] 1 Day, P50");
+            System.out.print("Enter your choice: ");
+            choice = input.nextInt();
+            
+            if (choice == 1) { // [1] 30 mins, P10
+                System.out.println("  [1] Subscribe");
+                System.out.println("  [2] Exit");
+                System.out.print("Enter your choice: ");
+                choice = input.nextInt();
+                
+                if (choice == 1) {
+                    System.out.println("Congratulations! You have successfully"
+                            + " subscribed to unli call to all networks for 30 mins.");
+                } else {
+                    System.out.println("Thank you!");
+                }
+            } else if (choice == 2) { // [2] 1 Hr 30 mins., P30
+                System.out.println("  [1] Subscribe");
+                System.out.println("  [2] Exit");
+                System.out.print("Enter your choice: ");
+                choice = input.nextInt();
+                
+                if (choice == 1) {
+                    System.out.println("Congratulations! You have successfully"
+                            + " subscribed to unli call to all networks for 1hr and 30 mins.");
+                } else {
+                    System.out.println("Thank you!");
+                }
+            } else if (choice == 3) { // [3] 1 Day, P50
+                System.out.println("  [1] Subscribe");
+                System.out.println("  [2] Exit");
+                System.out.print("Enter your choice: ");
+                choice = input.nextInt();
+                
+                if (choice == 1) {
+                    System.out.println("Congratulations! You have successfully"
+                            + " subscribed to unli call to all networks for 1 Day.");
+                } else {
+                    System.out.println("Thank you!");
+                }
+            }
+        } else {
+            System.out.println("Exiting...");
+        }
+    }
+}
