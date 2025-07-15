@@ -44,5 +44,43 @@ public class IfElseStatement {
             System.out.println("Normal Temp");
         }
        
+        
+        // voters age classification
+        
+        /* age
+            14 below -> Not yet a voter
+            15 - 17 -> School Election
+            18 - 25 -> SK Election
+            26 - 30 -> National Election
+            31 and above -> International Election
+        */
+        
+//        int age = 0;
+//        if (age <= 14) {
+//            System.out.println("Not yet a voter");
+//        } else if (age <= 17) { // 15 -17
+//            System.out.println("School Election");
+//        } else if (age <= 25) { // 18 - 25
+//            System.out.println("SK Election");
+//        } else {
+//            System.out.println("National Election");
+//        }
+        
+        int age = 35;
+        String result = "";
+        
+        if (age >= 31) {
+            result = "International Election";
+        } else if (age >= 26) {
+            result = "National Election";
+        } else if (age >= 18) {
+            result = "SK Election";
+        } else if (age >= 15) {
+            result = "School Election";
+        } else {
+            result = "Not yet a voter";
+        }
+
+        System.out.println(result);
     }
 }
