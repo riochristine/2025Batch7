@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Christine
+ * @author Christine Rio
  */
 
 /*
